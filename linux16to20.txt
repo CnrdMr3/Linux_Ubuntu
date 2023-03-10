@@ -1,0 +1,7 @@
+Linux / Ubuntu commands - 16 to 20 (End of first video goes to 20)
+
+16: Windows CMD usage.
+17: grep -ni "John Doe" names.txt (in CMD)
+18: bash (in CMD)
+19: grep (in Ubuntu)
+20: exit (in Ubuntu redirects to Windows CMD)
