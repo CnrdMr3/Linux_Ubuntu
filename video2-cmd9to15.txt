@@ -1,0 +1,7 @@
+9. cd
+10. mkdir
+11. touch
+12. rmdir
+13. rm
+14. open
+15. mv

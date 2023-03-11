@@ -1,0 +1,66 @@
+14. 'open' => Opens a folder/file outside of terminal.
+    (a) open .
+    (b) open file.txt
+!!! [MAC specific]
+
+!!! [Microsoft (Ubuntu/Kali/Debian)] => " ~$: sudo apt install xdg-open "]
+    (a) xdg-open .
+    (b) xdg-open file.txt
+    
+15. 'mv' => Move.
+    (a) mv Nobody MrInbetween
+    (b) mv Directory/MrInbetween
+
+16. 'cp' => Copy File/Folder.
+    (a) /Directory$: touch file.txt
+                     ls
+                     etc. etc. file.txt
+    (b) /Directory$: cp -v file.txt renamed.txt
+                     ls
+                     etc. etc. renamed.txt
+    (c) !!! - Copying a Directory - ' cp -r '
+        /Desktop$: cp -r -v names newNames
+    (d) !!! - Copying & Move into a directory.
+        /Desktop$: cd names
+        /names$: cp -r -v MrInbetween newNames/MrInbetw33n
+
+17. 'head' => Output the first part of a file.
+    (a) ~$: head <file>
+    (b)!!!(add '-n' + number) ~$: head <file> -n 20
+       ---> print first 20 lines of a file.
+
+18. 'tail' => Output the last part of a file.
+    (a) ~$: tail <file>
+    (b) ~$: tail <file> -n 15
+    (c)!!!('-f' = printing a process without end) --> ~$: tail /var/log/system.log
+                                                          [Display system process, but stops]
+                                                  --> ~$: tail -f /var/log/system.log
+                                                          [Display system process, but does not stop] NOTE: To exit => 'q'
+
+19. 'date' => Prints time and date.
+    (a) ~$: date
+    (b)!!!('>' = Redirect) ~$: date > <file>
+                           ~$: head <file>
+                               --- --- ---
+    (c)!!!('>>' = Multiple redirect) ~$: date >> <file>
+                                         date >> <file>
+                                         --- --- ---
+                                         --- --- ---
+    (d)!!!(If redirecting a file that isn't in the folder, it's created)
+                           /Directory$: date >> time.txt
+                                        ls
+                                        etc. etc. time.txt
+
+20. 'cat' => Concatenate.
+    (a) ~$: cat <file>
+            Displays contents of file
+    (b) ~$: cat head <file>
+            Displays first lines of file
+    (c) ~$: cat <file> <file>
+            Displays both files
+    (d) ~$ cat <file> <file> > /Directory/
+           Moves files to another directory, cd to there, ls = displays moved files.
+    (e)!!!('-n' shows line numbers) ~$: cat -n <file>
+                                        1. A
+                                        2. B
+                                        3. etc.

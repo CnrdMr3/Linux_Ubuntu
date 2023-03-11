@@ -1,0 +1,7 @@
+1. write a load of s***
+2. whoami
+3. man whoami
+4. man man
+5. clear
+  a - [-x]
+  b - ctrl+l
